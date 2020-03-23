@@ -1,0 +1,360 @@
+
+/*----- Fonts----*/
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+2&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Lato:100i&display=swap');
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'baloo 2', cursive;
+    line-height: 1.6;
+    background-color: rgb(247, 247, 247);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.page-images {
+    width: 100%;
+    margin: 20px 20px;
+}
+
+li {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 5px auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+h3 { 
+    display: block;
+    font: .7rem;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+.nav a {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.student-name {
+    margin: 0;
+    color: #000000;
+    text-align: center;
+}
+
+.portfolio-image {
+    display: block;
+    width: 70%;
+    max-width: 375px;
+    margin: auto;
+    padding: 40px 20px;
+    border-radius: 15%;
+    box-shadow: 20px 20px 5px -15px rgba(13, 32, 5, 0.4);
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.tagline {
+    padding:0;
+    margin: auto 0;
+    color: #022573d4;
+}
+
+.page-images {
+    margin-right: 0;
+    margin-left: 0;
+    width: 90%;
+    padding-top: 15px;
+}
+
+.vol-image {
+    max-width: 250px;
+    border-radius: 20%;
+}
+
+.vol-image:hover {
+    transform: scale(1.1);
+    border: 2px solid orange;
+}
+
+.contact {
+    display: block;
+    padding-top: 30px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.contact p {
+    font-family: 'lato', sans-serif;
+    font-weight: 700;
+}
+
+.info span {
+    font-weight: 900;
+}
+
+/* ---- Footer floats ---- */
+
+.back-to-top {
+    float: right;
+}
+
+.name {
+    float: left;
+}
+
+.card {
+    display: inline-block;
+    text-align: center;
+    margin: 20px 10px;
+    max-width: 100%;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+/* ================================= 
+   Layout Containers
+==================================== */
+.main-header {
+    background-color: rgb(247, 247, 247);
+    padding: 1em;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.primary-content {
+    display: block;
+    background-color: rgba(37, 127, 136, 0.28);
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+}   
+
+.main-footer {
+    text-align: center;
+    margin: 20px 15px 5px;
+    border-top: 1px solid rgb(150, 148, 148);
+}
+
+.cards {
+    border: 1px solid red;
+}
+
+.monkey {
+    text-align: center;
+    border-top: 1px solid rgba(53, 50, 50, 0.568);
+    text-shadow: 1px 1px 1px rgba(21, 65, 21, 0.403);
+    background-color: rgb(255, 255, 255);
+    padding:0  30px 20px;
+    
+}
+
+/* ================================= 
+    Page elements
+==================================== */
+
+
+/*-----------Links-----------------*/
+a:link,
+a:visited {
+    color: rgb(29, 29, 29);
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    color: #bb7864;
+}
+
+.footer-nav{
+    display: none;
+}
+
+/* float clearfix */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .clear {
+      clear: both;
+  }
+
+/* ================================= 
+    Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+    .main-nav {
+        margin-top: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .main-nav li,
+    .footer-nav li {
+        display: inline-block;
+        width: auto;
+        margin-right: 15px;
+        background-color: transparent;
+    }
+
+    .portfolio-image {
+        width: 35%;
+        float: right;
+        margin-left: 25px;
+    }
+
+    .about {
+        display: inline-block;
+        clear: both;
+        line-height: 1.6;
+        font-size: 1.2em;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+    }
+
+    .tagline {
+        display: block;
+        padding-top: 45px;
+        text-align: left;
+    }
+
+      .card {
+      float: left;  
+      width: calc(50% - 30px);
+      margin-bottom: 0;
+    }
+
+    .page-images {
+        margin-left:20px;
+    }
+
+    .footer-nav{
+        display: none;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    .main-nav {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .main-header {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .student-name {
+        float: left;
+    }
+
+    .main-header{
+        padding-top: 25px;
+    }
+    
+    .main-nav{
+        display: block;
+        float: right;
+        width: auto;
+        margin-right: 15px;
+        background-color: transparent;
+    }
+
+    .portfolio-image {
+        display: inline-block;
+        width: 35%;
+        float: right;
+        margin-left: 25px;
+    }
+
+    .about {
+        display: inline-block;
+        text-align: left;
+        clear: both;
+        line-height: 1.6;
+        font-size: 1.2em;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+    }
+
+    .tagline {
+        display: block;
+        padding-top: 45px;
+        text-align:left;
+        font-size: 1.2em;
+    }
+
+      .card {
+      float: left;  
+      width: calc(33% - 30px);
+      
+    }
+
+    .page-images {
+        margin-left: 40px;
+    }
+
+    .clear {
+        clear: none;
+    }
+
+    .map {
+        clear: both;
+    }
+
+    .page-images:hover {
+        transform: scale(1.1);
+    }
+
+    .back-to-top {
+        display: none;
+    }
+
+    .footer-nav {
+        display: block;
+        float: right;
+        width: auto;
+        margin-right: 15px;
+        background-color: transparent;
+    }
+}
